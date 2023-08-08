@@ -22,7 +22,10 @@ body {
 }
 .udlogo {
   width: 60%;
-  margin: auto;
+  margin-left: 20%;
+}
+#links {
+  visibility: hidden;
 }
 .btn {
   display: flex;
@@ -67,7 +70,6 @@ span {
   background-color: #5454545a;
   color: #cc5500;
 }
-
 
 .video-box {
   height: 100%;
@@ -119,19 +121,23 @@ span {
 .about {
   margin-top: 50px;
   text-align: center;
+
 }
 #about-content {
   font-size: 20px;
   color: #fff;
   padding-left: 10px;
   padding-right: 10px;
+
+}
+section {
+  height: 500px;
+}
+section button{
+  visibility: hidden;
 }
 
-
-
-
 /* scall up dextop view  */
-
 
 @media screen and (min-width: 1200px) {
   * {
@@ -150,25 +156,32 @@ span {
   #main {
     width: 100%;
   }
+
   #nav {
+    height: 100px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     width: 100%;
-    height: 17vh;
-    padding: 4vw;
   }
-  #nav #links {
-    display: flex;
-    gap: 20px;
+  .udlogo {
+    height: 60%;
+    width: 20%;
+    margin-left: 6%;
   }
-  #links a {
+  #links {
+    visibility: visible;
+    margin-left: 60%;
+  }
+
+  #links button {
     text-decoration: none;
-    font-weight: 400;
+    font-size: large;
+    font-weight: 500;
+    height: 35px;
+    width: 80px;
     color: white;
     transition: 0.3s all;
   }
-  #links a:hover {
+  #links button:hover {
     color: #cc5500;
   }
   .hk::after {
@@ -213,10 +226,7 @@ span {
     line-height: 85px;
     margin-bottom: 25px;
   }
-  .logo {
-    margin-top: 60%;
-    margin-left: 30%;
-  }
+
   span {
     color: #cc5500;
   }
@@ -229,7 +239,9 @@ span {
     width: 50%;
     /* border: 1px solid green; */
   }
-
+  h2{
+    color: white;
+  }
   .video-box {
     width: 50%;
     height: 100%;
@@ -239,7 +251,7 @@ span {
     height: 100%;
   }
   .main-box {
-    margin-top: 5%;
+    margin-top: 2%;
     display: flex;
     height: 550px;
   }
@@ -268,10 +280,32 @@ span {
     padding-left: 10px;
     background-color: white;
   }
-  .about {
-    margin-top: 8%;
+  #aboutbox {
+    display: none;    
+  }
+  .about h2 {
+    color: white;
+  }
+  .Abutton {
+    border-style: none;
+  }
+  section{
     text-align: center;
-    margin-left: 30%;
-    margin-right: 30%;
+    width: 80%;
+    margin: auto;
+  }
+  section p{
+    margin-top: 69px;
+  }
+  section button{
+    visibility: visible;
+    margin-top: 10%;
+    color: #cc5500;
+    width: 80px;
+    height: 60px;
+    border-style: none;
+    cursor: pointer;
+    font-size: larger;
+    
   }
 }
