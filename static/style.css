@@ -30,6 +30,8 @@ body {
 .btn {
   display: flex;
   align-items: center;
+  position: absolute;
+  top: 58%;
   padding: 10px 20px;
   border: 0;
   outline: 0;
@@ -57,7 +59,7 @@ body {
   font-weight: 600;
   line-height: 50px;
   margin-bottom: 25px;
-  margin-left: 5px;
+  margin-left: 15px;
   padding-right: 10px;
 }
 .content p {
@@ -72,6 +74,7 @@ span {
 }
 
 .video-box {
+  margin-top: 12%;
   height: 100%;
 }
 .video-box video {
