@@ -37,8 +37,15 @@
             <h2>GET NOTIFIED ON LAUNCH</h2>
             <br />
             <br />
-            <form class="e-form">
-              <input type="email" placeholder="email address" />
+            {% with messages = get_flashed_messages() %}  
+                {% if messages %}  
+                    {% for message in messages %}  
+                            <p>{{ message }}</p>  
+                    {% endfor %}  
+                {% endif %}  
+            {% endwith %}  
+            <form class="e-form" action="/" method="post">
+              <input type="email" name="email" placeholder="email address" />
               <button type="submit" class="btn">Subscribe</button>
             </form>
           </div>
@@ -77,7 +84,6 @@
     function showBack(param_div_id) {
       document.getElementById('aboutbox').innerHTML = document.getElementById('video').innerHTML;
     }
-
   </script>
 
 </body>

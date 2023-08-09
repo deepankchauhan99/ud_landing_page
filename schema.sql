@@ -4,6 +4,5 @@ CREATE TABLE subscriber (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     email TEXT NOT NULL UNIQUE,
-    location TEXT,
     status TEXT
 );
