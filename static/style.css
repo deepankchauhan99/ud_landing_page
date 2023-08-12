@@ -331,6 +331,9 @@ section button{
     color: black;
     background-color: transparent;
   }
+  .Hero-heading{
+    margin-left: 15px;
+  }
   
   .video-box video {
     margin-top: 12%;
