@@ -19,7 +19,11 @@
     <div id="nav">
       <img class="udlogo" src="static/UDd1.png" />
       <div id="links">
-        <button class="Abutton hk" onclick="show('aboutbox')">About</button>
+        <button class="Abutton hk" onclick="show('aboutbox')">
+          <div id="about" onclick="show1('return')">
+            About-Us
+          </div>
+        </button>
       </div>
     </div>
 
@@ -65,7 +69,13 @@
           achievement.
         </p>
 
-        <a href="/"><button onclick="showBack('video')">Return</button></a>
+        <div id="return">
+          <a href="/"><button style="color: #cc5500;
+            border-style: none;
+            cursor: pointer;">Home</button></a>
+        </div>
+
+
       </section>
     </div>
   </div>
@@ -74,8 +84,8 @@
     function show(param_div_id) {
       document.getElementById('video').innerHTML = document.getElementById('aboutbox').innerHTML;
     }
-    function showBack(param_div_id) {
-      document.getElementById('aboutbox').innerHTML = document.getElementById('video').innerHTML;
+    function show1(param_div_id) {
+      document.getElementById('about').innerHTML = document.getElementById('return').innerHTML;
     }
 
   </script>

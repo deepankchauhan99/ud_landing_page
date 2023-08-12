@@ -298,14 +298,11 @@ section button{
     margin-top: 69px;
   }
   section button{
-    visibility: visible;
+    display: none;
     margin-top: 10%;
     color: #cc5500;
-    width: 80px;
-    height: 60px;
     border-style: none;
     cursor: pointer;
     font-size: larger;
-    
   }
 }
