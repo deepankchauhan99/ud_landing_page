@@ -158,7 +158,7 @@ footer img {
   /* border: 1px solid red; */
   border-radius: 8px;
 }
-.socials{
+.socials {
   display: flex;
   justify-content: center;
 }
@@ -170,7 +170,7 @@ footer img {
 .img-hover-zoom img {
   transition: transform 0.5s ease;
 }
-.twitter{
+.twitter {
   margin-left: 4px;
   margin-right: 4px;
 }
@@ -384,7 +384,7 @@ footer img {
     width: 100%;
     height: 100%;
   }
-  footer{
+  footer {
     position: inherit;
   }
   footer span {
@@ -396,5 +396,119 @@ footer img {
   footer img {
     margin-top: 5px;
     margin: auto;
+  }
+  .loader-wrapper{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+  }
+}
+
+
+
+
+.loader-wrapper{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+}
+
+
+.absolute {
+  position: absolute;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.loader {
+  display: flex;
+  margin: 0.25em 0;
+  justify-content: center;
+  margin-top: 90%;
+}
+
+.w-2 {
+  width: 0.5em;
+}
+
+.dash {
+  animation: dashArray 2s ease-in-out infinite, dashOffset 2s linear infinite;
+}
+
+.spin {
+  animation: spinDashArray 2s ease-in-out infinite, spin 8s ease-in-out infinite,
+    dashOffset 2s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes dashArray {
+  0% {
+    stroke-dasharray: 0 1 359 0;
+  }
+
+  50% {
+    stroke-dasharray: 0 359 1 0;
+  }
+
+  100% {
+    stroke-dasharray: 359 1 0 0;
+  }
+}
+
+@keyframes spinDashArray {
+  0% {
+    stroke-dasharray: 270 90;
+  }
+
+  50% {
+    stroke-dasharray: 0 360;
+  }
+
+  100% {
+    stroke-dasharray: 270 90;
+  }
+}
+
+@keyframes dashOffset {
+  0% {
+    stroke-dashoffset: 365;
+  }
+
+  100% {
+    stroke-dashoffset: 5;
+  }
+}
+
+@keyframes spin {
+  0% {
+    rotate: 0deg;
+  }
+
+  12.5%,
+  25% {
+    rotate: 270deg;
+  }
+
+  37.5%,
+  50% {
+    rotate: 540deg;
+  }
+
+  62.5%,
+  75% {
+    rotate: 810deg;
+  }
+
+  87.5%,
+  100% {
+    rotate: 1080deg;
   }
 }
