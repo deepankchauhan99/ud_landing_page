@@ -31,6 +31,9 @@ def after_request(response):
     response.headers["Pragma"] = "no-cache"
     return response
 
+# @app.route("/mail", methods=["GET","POST"])
+# def mail():
+#     return render_template("emailtemplate.html",email="deepank")
 
 @app.route("/", methods=["GET","POST"])
 def index():
@@ -60,11 +63,12 @@ def index():
             flash("Subscribed!")
             # Sending email
             msg = Message(
-            'You have successfully subscribed!',
+            '🚀 Unleash Your Style: Underdogs Launching Soon! 🎉',
             sender = ('Underdogs Clothing', 'support@underdogs-clothing.com'), #os.getenv('MAIL_USERNAME')),
             recipients = [email]
             )
-            msg.body = "Dear " + email + "!\nThank you for showing interest in our latest brand. We will keep you updated on our big launch.\nDo not worry we will not spam you.\nThank you\nTeam Underdogs Clothing"
+            # msg.body = "Dear " + email + "!\nThank you for showing interest in our latest brand. We will keep you updated on our big launch.\nDo not worry we will not spam you.\nThank you\nTeam Underdogs Clothing"
+            msg.html = render_template("emailtemplate.html", email=email)
             mail.send(msg)
 
         # Insert data into the 'subscriber' table

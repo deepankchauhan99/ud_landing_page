@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main {
+        background-color: rgb(0, 0, 0);
+        margin: auto;
+        position: relative;
+      } 
+      /* Media Query for screens with a width of 600px or less (mobile view) */
+      @media (max-width: 600px) {
+          .main {
+              width: 100%;
+          }
+      }
+    
+      /* Media Query for screens wider than 600px (web view) */
+      @media (min-width: 601px) {
+          .main {
+              width: 60%;
+          }
+      }
+    
+      .logo{
+        display: flex;
+        height: 10%;
+        margin: auto;
+        padding-top: 5%;
+        width: 40%;
+      }
+      .jtj-container {
+        text-align: center;
+        position: relative;
+    }
+
+    .jtj {
+        font-size: xx-large;
+        font-weight: 900;
+        color: rgba(249, 60, 0, 1);
+        margin-top: 5%;
+        margin-botton:1%;
+        padding: 0;
+    }
+
+    .jtj-span {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: calc(100% + 10px); /* Adjust the spacing below the paragraph */
+        text-align: center;
+        color: white;
+    }
+      .line{
+        width: 100%;
+        height: 1px;
+        background-color:rgba(249, 60, 0, 1);
+        margin: auto;
+      }
+      .statement{
+        text-align: center;
+        line-height: 10px;
+        color: white;
+      }
+     
+    .st{
+      text-align: center;
+      font-size: xx-large;
+      font-weight: 900;
+      color: white;
+    }
+    .cp{
+      text-align: center;
+      color: white;
+      padding-bottom: 10px;
+      color: rgba(249, 60, 0, 1);
+    }
+    .social{
+      padding-bottom: 10px;
+    }
+    a {
+      text-decoration: none;
+    }
+    .insta{
+      height: 20px;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <img class="logo" src="https://i.imgur.com/SuUQtqH.png" alt="" />
+      <div class="content">
+        <div class="jtj-container">
+          <p class="jtj">JOIN THE JOURNEY</p>
+          <span class="jtj-span">-from you for you</span>
+        </div>
+        <div class="sample" style="color:white;padding-left:10%;padding-right:10%;">
+          <div class="line"></div>
+          <p>Hello {{email}},</p>
+          <p>Thanks for joining the Underdogs hype train. We're about to unveil a fashion bombshell, and you're part of the secret.</p>
+          <p>Expect behind-the-scenes peeks, VIP launch access, and jaw-dropping styles that define you. The countdown's on, front row awaits!</p>
+          <p>Cheers,<br>
+            Team Underdogs</p>  
+          <div class="line"></div> 
+          <div class="slang">
+            <p class="statement">Beyond clothes...</p>
+            <p class="statement">Expressing inner battles</p>
+            <p class="statement">blending emotion with streetwear</p>
+          </div>
+          <div class="line"></div>      
+          <p class="st">STAY TUNED</p>
+          <p class="cp">underdogs clothing &copy; 2023</p> 
+          <div  class="social" style="text-align:center;">
+            <a href="https://www.instagram.com/underdogs__clothing" target="_blank">
+              <img class="insta" src="https://i.imgur.com/MkP1QAH.png" alt="">
+            </a>
+            <a href="https://twitter.com/Underdogscloths?t=EJ1VpT7nTr3XGF-hm339Dw&s=08" target="_blank">
+              <img class="insta" src="https://i.imgur.com/qyio5jm.png" alt="">
+            </a>
+            <a href="https://www.threads.net/@underdogs__clothing" target="_blank">
+              <img class="insta" src="https://i.imgur.com/64WPMP3.png" alt="">
+            </a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
